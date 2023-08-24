@@ -1,0 +1,92 @@
+
+.App-header {
+  background-color: #dbad01;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.div-pai{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #000;
+   width: 390px;
+   height: 390px;
+   border-radius: 100%;
+   border: 2px solid white;
+}
+
+.div-cron{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 380px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.div-top{
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.div-bottom{
+  margin-bottom: 15px;
+}
+
+.area-cont{
+
+}
+
+.minute{
+  font-size: 130px;
+}
+
+
+.area-buttom{
+  display: flex;
+  width: 350px;
+  flex-direction: row;
+  padding: 10px;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.buttom{
+  background-color: #000;
+  font-size: 25px;
+  padding: 10px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.buttom:hover{
+  opacity: 0.8;
+}
+
+.running-icon {
+  animation: runningAnimation 1s infinite linear; /* Aplica a animação com duração de 1 segundo, repetição infinita e linear */
+}
+
+@keyframes runningAnimation {
+  0% {
+    transform: translateY(0); /* Posição inicial */
+  }
+  50% {
+    transform: translateY(-2px); /* Posição intermediária */
+  }
+  100% {
+    transform: translateY(0); /* Volta à posição inicial */
+  }
+}
